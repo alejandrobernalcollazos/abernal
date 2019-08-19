@@ -1,5 +1,5 @@
 /* --------------------------------*/
-/* CONFIGURACIONES GENERALES */
+/* GENERAL SETTINGS */
 /* --------------------------------*/
 
 * {
@@ -22,12 +22,45 @@ html {
     margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+    color: #535353;
+}
+
 h1 {
     margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 5%;
+}
+
+.icon-big {
+    font-size: 200%;
+    display: block;
+    color: #535353;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.box {
+    padding: 2%;
+    margin-bottom: 5%;
 }
 
 /* --------------------------------*/
-/* SECCIÓN PRINCIPAL */
+/* PRINCIPAL SECTION */
 /* --------------------------------*/
 
 .title {
@@ -36,9 +69,6 @@ h1 {
 }
 
 .title h1 {
-    color: #535353;
-    font-size: 2.5em;
-    font-weight: 700;
     margin-top: 15px;
 }
 
@@ -75,18 +105,11 @@ h1 {
 }
 
 .motto h2 {
-    color: #535353;
-    font-size: 1.5em;
-    font-weight: 100;
     margin-top: 80%;
 }
 
 .motto-cell-phone {
     display: none;
-}
-
-.motto-cell-phone h2 {
-    color: #535353;
 }
 
 .principal-image {
@@ -97,5 +120,26 @@ h1 {
     height: 90vh;
     width: 90vh;
     float: right;
+}
+
+/* --------------------------------*/
+/* VALUES */
+/* --------------------------------*/
+
+.values {
+    background-color: #d3d3d3;
+}
+
+.values-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.values-title h2 {
+    font-size: 2em;
+    text-align: center;
 }
 
