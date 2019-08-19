@@ -1,6 +1,6 @@
 
 /* --------------------------------*/
-/* Tablets Landscape */
+/* TABLETS LANDSCAPE */
 /* --------------------------------*/
 
 @media only screen and (max-width: 1024px) {
@@ -12,7 +12,7 @@
     body { font-size: 18px; }
 
     /* --------------------------------*/
-    /* Title */
+    /* Principal section */
     /* --------------------------------*/
 
     .title { 
@@ -20,37 +20,37 @@
         margin-left: 20px;
     }
 
-    /* --------------------------------*/
-    /* Navigation */
-    /* --------------------------------*/
-
     .main-nav { 
         float: left; 
         margin-left: 20px;
     }
 
-    /* --------------------------------*/
-    /* Motto */
-    /* --------------------------------*/
+    .motto { margin-left: 20px; }   
 
-    .motto { margin-left: 20px;   }   
-
-    .motto h2 { font-size: 1.2em; }
-    
-    /* --------------------------------*/
-    /* Principal image */
-    /* --------------------------------*/
+    .motto h2 { font-size: 1.4em; }
 
     .principal-image { 
-        height: 70vh;
-        width: 70vh;
+        height: 65vh;
+        width: 65vh;
         margin-top: 5%;
     }  
+
+    /* --------------------------------*/
+    /* Values section */
+    /* --------------------------------*/
+
+    .box {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 270px;
+        padding: 4%;
+    }
 
 }
 
 /* --------------------------------*/
-/* Tablets Portrait */
+/* TABLETS PORTRAIT */
 /* --------------------------------*/
 
 @media only screen and (max-width: 768px) {
@@ -62,7 +62,7 @@
     body { font-size: 16px; }
 
     /* --------------------------------*/
-    /* Title */
+    /* Principal section */
     /* --------------------------------*/
 
     .title { 
@@ -70,18 +70,10 @@
         margin-left: 10px;
     }
 
-    /* --------------------------------*/
-    /* Navigation */
-    /* --------------------------------*/
-
     .main-nav { 
         float: left; 
         margin-left: 10px;
     }
-
-    /* --------------------------------*/
-    /* Motto */
-    /* --------------------------------*/
 
     .motto { display: none;  }   
 
@@ -96,27 +88,24 @@
         font-size: 1.5em;
         font-weight: 100;
         margin-top: 5%;
+        margin-bottom: 5%;
         text-align: center;
     }
-    
-    /* --------------------------------*/
-    /* Principal image */
-    /* --------------------------------*/
 
     .principal-image { 
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
-        height: 65vh;
-        width: 65vh;
+        height: 60vh;
+        width: 60vh;
         float: unset;
     }  
 
 }
 
 /* --------------------------------*/
-/* Cell phone */
+/* CELL PHONES */
 /* --------------------------------*/
 
 @media only screen and (max-width: 568px) {
@@ -128,7 +117,7 @@
     body { font-size: 14px; }
 
     /* --------------------------------*/
-    /* Title */
+    /* Principal section */
     /* --------------------------------*/
 
     .title { 
@@ -139,10 +128,6 @@
         text-align: center;
     }
 
-    /* --------------------------------*/
-    /* Navigation */
-    /* --------------------------------*/
-
     .main-nav { 
         display: block; 
         margin-left: auto;
@@ -152,15 +137,9 @@
         float: unset;
     }
 
-    .main-nav li {
-        margin-right: 20px;
-    }
+    .main-nav li { margin-right: 20px; }
 
-    /* --------------------------------*/
-    /* Motto */
-    /* --------------------------------*/
-
-    .motto { display: none;  }   
+    .motto { display: none; }   
 
     .motto-cell-phone {
         display: block;
@@ -173,21 +152,28 @@
         font-size: 1.5em;
         font-weight: 100;
         margin-top: 6%;
+        margin-bottom: 5%;
         text-align: center;
     }
-    
-    /* --------------------------------*/
-    /* Principal image */
-    /* --------------------------------*/
 
     .principal-image { 
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
-        height: 65vh;
-        width: 65vh;
+        height: 60vh;
+        width: 60vh;
         float: unset;
     }  
+
+    /* --------------------------------*/
+    /* Values section */
+    /* --------------------------------*/
+
+    .box {
+        width: 100%;
+        padding: 4%;
+        height: auto;
+    }
 
 }
