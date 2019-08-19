@@ -123,7 +123,7 @@ p {
 }
 
 /* --------------------------------*/
-/* VALUES */
+/* VALUES SECTION */
 /* --------------------------------*/
 
 .values {
@@ -143,3 +143,40 @@ p {
     text-align: center;
 }
 
+/* --------------------------------*/
+/* IMAGES SECTION */
+/* --------------------------------*/
+
+.images {
+
+}
+
+.images-gallery {
+    list-style: none;
+    width: 100%;
+}
+
+.images-gallery li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.photo {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
