@@ -24,7 +24,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     color: #535353;
 }
 
@@ -40,6 +41,10 @@ h2 {
 
 h3 {
     margin-bottom: 5%;
+}
+
+h4 {
+    margin-bottom: 2%;
 }
 
 .icon-big {
@@ -127,7 +132,7 @@ p {
 /* --------------------------------*/
 
 .values {
-    background-color: #d3d3d3;
+    background-color: #f4f4f4;
 }
 
 .values-title {
@@ -179,4 +184,31 @@ p {
 .photo img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+.clearfix { zoom: 1 }
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* --------------------------------*/
+/* EXPERIENCIA SECTION */
+/* --------------------------------*/
+
+.experience-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.experience-title h2 {
+    font-size: 2em;
+    text-align: center;
 }
