@@ -212,3 +212,8 @@ p {
     font-size: 2em;
     text-align: center;
 }
+
+.experience-box {
+    padding: 2%;
+    margin-bottom: 5%;
+}
