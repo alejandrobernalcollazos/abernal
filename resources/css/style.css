@@ -110,7 +110,7 @@ p {
 }
 
 .motto h2 {
-    margin-top: 80%;
+    margin-top: 50%;
 }
 
 .motto-cell-phone {
@@ -122,8 +122,8 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
-    width: 90vh;
+    height: 65vh;
+    width: 65vh;
     float: right;
 }
 
