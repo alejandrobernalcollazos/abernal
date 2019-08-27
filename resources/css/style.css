@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h3 {
@@ -48,7 +48,7 @@ h4 {
 }
 
 .icon-big {
-    font-size: 200%;
+    font-size: 300%;
     display: block;
     color: #000;
     margin-bottom: 10px;
@@ -62,6 +62,10 @@ p {
 .box {
     padding: 1%;
     margin-bottom: 5%;
+}
+
+.center {
+    text-align: center;
 }
 
 /* --------------------------------*/
@@ -122,9 +126,10 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 65vh;
-    width: 65vh;
+    height: 60vh;
+    width: 60vh;
     float: right;
+    overflow: hidden;
 }
 
 /* --------------------------------*/
@@ -223,7 +228,14 @@ p {
 /* --------------------------------*/
 
 .testimony {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/office-background.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.testimony h2 {
+    color: #fff;
 }
 
 .testimony-title {
@@ -237,6 +249,29 @@ p {
 .testimony-title h2 {
     font-size: 2em;
     text-align: center;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* --------------------------------*/
