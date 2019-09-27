@@ -3,5 +3,5 @@ node {
     stage "Create build output"
     
     // Make the output directory.
-    sh echo Hola mundo
+    sh "echo Hola mundo"
 }
