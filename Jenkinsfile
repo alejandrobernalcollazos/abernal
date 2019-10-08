@@ -4,7 +4,7 @@ node {
     
     // Make the output directory.
     sh "echo I am building LEITO PICHONI AND YAIL PERALTA"
-    sh "docker images"
+    sh "docker build -t frontend:v1 ."
     
     stage "Unit Tests"
     
