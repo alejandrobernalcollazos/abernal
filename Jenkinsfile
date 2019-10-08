@@ -21,5 +21,9 @@ node {
     
     // Make the output directory.
     sh "echo I am executing the automated tests LEITO PICHONI AND YAIL PERALTA"
+ 
+    stage "Running Chayane page "
+    
+    sh "docker run -d -p 8888:80 frontend:v1 "
 
 }
