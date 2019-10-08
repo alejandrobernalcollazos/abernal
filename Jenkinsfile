@@ -1,7 +1,8 @@
 // This shows a simple example of how to archive the build output artifacts.
 node {
     stage "Build"
-    
+    // Checkout repository
+    checkout scm
     // Make the output directory.
     sh "echo I am building LEITO PICHONI AND YAIL PERALTA"
     sh "docker build -t frontend:v1 ."
