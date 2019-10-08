@@ -23,7 +23,15 @@ node {
     sh "echo I am executing the automated tests LEITO PICHONI AND YAIL PERALTA"
  
     stage "Running Chayane page "
-    
-    sh "docker run -d -p 8888:80 frontend:v1 "
+    // Eliminar el contenedor que esta corriendo actualmente
+    try {
+          sh "docker rm leo -f"
+        }
+        catch (exc) {
+            echo 'No pude borrar el contenedor'
+        }
+
+    // Subir el contenedor nuevo
+    sh "docker run -d -p 8888:80 --name leo frontend:v1 "
 
 }
