@@ -136,6 +136,16 @@ p {
 /* VALUES SECTION */
 /* --------------------------------*/
 
+.values-box {
+    height: 200px;
+    margin-left: 1.2%;
+    padding: 1%;
+}
+
+.values-box:first-child {
+    margin-left: 1%;
+}
+
 .values {
     background-color: #f4f4f4;
 }
