@@ -38,10 +38,17 @@ node {
     // Subir el contenedor nuevo
     sh "docker run -d -p 8888:80 --name frontendcontainer frontend:v1 "
     
-    stage('SonarQube analysis') {
-        def scannerHome = tool 'SonarScanner 4.0';
-        withSonarQubeEnv('sonarqube') { // If you have configured more than one global server connection, you can specify its name
-            sh "${scannerHome}/bin/sonar-scanner"
+    stage('Sonarqube') {
+        environment {
+            scannerHome = tool 'SonarScanner 4.0'
+        }
+        steps {
+            withSonarQubeEnv('sonarqube') {
+                sh "${scannerHome}/bin/sonar-scanner"
+            }
+            timeout(time: 10, unit: 'MINUTES') {
+                waitForQualityGate abortPipeline: true
+            }
         }
     }
 }
