@@ -1,16 +1,9 @@
 // This shows a simple example of how to archive the build output artifacts.
 node {
-    stage('Sonarqube') {
-        environment {
-            scannerHome = tool 'SonarScanner 4.0'
-        }
-        steps {
-            withSonarQubeEnv('sonarqube') {
-                sh "${scannerHome}/bin/sonar-scanner"
-            }
-            timeout(time: 10, unit: 'MINUTES') {
-                waitForQualityGate abortPipeline: true
-            }
+    stage('SonarQube analysis') {
+        def scannerHome = tool 'SonarScanner 4.0';
+        withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
+            sh "${scannerHome}/bin/sonar-scanner"
         }
     }
 }
