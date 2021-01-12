@@ -38,8 +38,11 @@ pipeline {
         }
         stage('Buil y ejecución de contenedor de docker') {
             steps {
+                sh 'docker stop alejandrobernal'
+                sh 'docker rm alejandrobernal'
+                sh 'docker rmi alejandro'
                 sh 'docker build -t alejandro .'
-                sh 'docker run -p 8888:80 alejandro'
+                sh 'docker run --name alejandrobernal -d -p 8888:80 alejandro'
             }
         }
     }
