@@ -36,5 +36,11 @@ pipeline {
                 sh 'touch nuevoarchivo.txt'
             }
         }
+        stage('Buil y ejecución de contenedor de docker') {
+            steps {
+                sh 'docker build -t alejandro .'
+                sh 'docker run -p 8888:80 alejandro'
+            }
+        }
     }
 }
