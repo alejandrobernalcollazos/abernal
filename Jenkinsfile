@@ -26,9 +26,14 @@ node {
 pipeline {
     agent any
     stages {
-        stage('Example Build') {
+        stage('Imprimir mensaje de bienvenida') {
             steps {
                 echo 'Hola Clase de DevOps de 2021 :D'
+            }
+        }
+        stage('Creando nuevo archivo') {
+            steps {
+                sh 'touch nuevoarchivo.txt'
             }
         }
     }
